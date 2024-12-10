@@ -3,22 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8ABE06DF2D07C542007F9C31 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE06DE2D07C542007F9C31 /* Colors.swift */; };
 		A9E7FD832CD93BFE001A762A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E7FD822CD93BFE001A762A /* AppDelegate.swift */; };
 		A9E7FD852CD93BFE001A762A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E7FD842CD93BFE001A762A /* SceneDelegate.swift */; };
 		A9E7FD8C2CD93C01001A762A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9E7FD8B2CD93C01001A762A /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8ABE06DE2D07C542007F9C31 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		A9E7FD7F2CD93BFE001A762A /* Nearby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nearby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E7FD822CD93BFE001A762A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9E7FD842CD93BFE001A762A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A9E7FD8B2CD93C01001A762A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9E7FD902CD93C01001A762A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8ABE06E02D07C5AB007F9C31 /* Coordinator */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Coordinator; sourceTree = "<group>"; };
+		8ABE06E32D07C6C4007F9C31 /* Splash */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Splash; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A9E7FD7C2CD93BFE001A762A /* Frameworks */ = {
@@ -31,6 +38,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8ABE06E52D07C6D0007F9C31 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8ABE06E32D07C6C4007F9C31 /* Splash */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		A9E7FD762CD93BFE001A762A = {
 			isa = PBXGroup;
 			children = (
@@ -50,11 +65,11 @@
 		A9E7FD812CD93BFE001A762A /* Nearby */ = {
 			isa = PBXGroup;
 			children = (
-				A9E7FD902CD93C01001A762A /* Info.plist */,
 				A9E7FD972CD93C1C001A762A /* Resources */,
 				A9E7FD962CD93C17001A762A /* Sources */,
 				A9E7FD822CD93BFE001A762A /* AppDelegate.swift */,
 				A9E7FD842CD93BFE001A762A /* SceneDelegate.swift */,
+				A9E7FD902CD93C01001A762A /* Info.plist */,
 			);
 			path = Nearby;
 			sourceTree = "<group>";
@@ -79,6 +94,8 @@
 		A9E7FD982CD93C7F001A762A /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				8ABE06E52D07C6D0007F9C31 /* Scenes */,
+				8ABE06E02D07C5AB007F9C31 /* Coordinator */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -86,6 +103,7 @@
 		A9E7FD992CD93C84001A762A /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				8ABE06DE2D07C542007F9C31 /* Colors.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -104,6 +122,10 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8ABE06E02D07C5AB007F9C31 /* Coordinator */,
+				8ABE06E32D07C6C4007F9C31 /* Splash */,
 			);
 			name = Nearby;
 			productName = "NearbyApp NLW";
@@ -160,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9E7FD832CD93BFE001A762A /* AppDelegate.swift in Sources */,
+				8ABE06DF2D07C542007F9C31 /* Colors.swift in Sources */,
 				A9E7FD852CD93BFE001A762A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +318,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WNNJ4KX4AX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "NearbyApp NLW/Info.plist";
+				INFOPLIST_FILE = Nearby/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = SplashViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -322,7 +345,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WNNJ4KX4AX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "NearbyApp NLW/Info.plist";
+				INFOPLIST_FILE = Nearby/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = SplashViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
